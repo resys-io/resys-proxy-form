@@ -130,6 +130,7 @@ describe('ProviderContext', () => {
   it('updates any listeners that depend on array iterators', () => {
     const context = new ProviderContext({ items: [1, 2, 3] });
 
+    // Mock all Array functions
     const listeners = Object.entries(Object.getOwnPropertyDescriptors(Array.prototype)).filter(([n, d]) => isFunction(d.value)).map(([name, descriptor]) => {
       const listener = jest.fn();
       context.register([['items', name]], listener);
@@ -137,7 +138,8 @@ describe('ProviderContext', () => {
       return listener;
     });
 
-    expect(listeners).toHaveLength(32);
+    // Using node 16.x this is 33
+    expect(listeners).toHaveLength(33);
 
     context.update(f => {
       f.items[1] = 10;
