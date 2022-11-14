@@ -42,11 +42,11 @@ jobs:
         run: yarn run test
       - name: 🏗️ Build main package
         run: yarn run build
-      # - name: 🚚 Publish to NPM
-      #   uses: JS-DevTools/npm-publish@v1
-      #   with:
-      #     token: ${{ secrets.NPM_TOKEN }}
-      #     package: packages/main/package.json
+      - name: 🚚 Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: packages/main/package.json
       # - name: 🏗️ Build example app
       #   run: yarn run build:example
       # - name: 🚀 Deploy to GitHub Pages

@@ -1,6 +1,6 @@
 {
-  "name": "proxy-form",
-  "version": "0.0.17",
+  "name": "resys-proxy-form",
+  "version": "1.0.0",
   "description": "Form state management for React with JS proxies",
   "license": "MIT",
   "main": "dist/lib/index.js",
