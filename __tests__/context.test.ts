@@ -138,8 +138,8 @@ describe('ProviderContext', () => {
       return listener;
     });
 
-    // Using node 16.x this is 33
-    expect(listeners).toHaveLength(33);
+    // Using node 18.x this is 35
+    expect(listeners).toHaveLength(35);
 
     context.update(f => {
       f.items[1] = 10;
