@@ -4,8 +4,8 @@
   "description": "Form state management for React with JS proxies",
   "license": "MIT",
   "type": "module",
-  "main": "dist/lib/index.mts",
-  "types": "dist/types/index.d.mts",
+  "main": "dist/lib/index.mjs",
+  "types": "dist/types/index.d.mjs",
   "files": [
     "dist"
   ],
