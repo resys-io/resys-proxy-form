@@ -1,4 +1,4 @@
-import produce, { enablePatches, Patch, produceWithPatches } from 'immer';
+import { enablePatches, Patch, produceWithPatches, produce } from 'immer';
 import { createContext } from 'react';
 import { Fields, FieldsMap, getIn, isPlainObject, mkDefault } from './helpers';
 import { FieldPath, FormListener, FormOptions, RegistrationUpdater, UnsubscribeFn } from './types';

@@ -4,8 +4,8 @@
     "declarationDir": "dist/types",
     "rootDir": "src",
     "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "lib": [
       "dom",
